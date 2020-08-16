@@ -1,0 +1,86 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    padding: 10px 0;
+}
+
+.container{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.containernested{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.classflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.classflexnested{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.classflexnested>article{
+    width: 33.33%;
+    padding: 0 0 0 5px;
+}
+.classflexnested>article:last-child{
+    padding-right: 5px;
+}
+
+.classflex>div:nth-child(1){
+    width: 25%;
+    padding: 0 0 0 10px;
+}
+.classflex>div:nth-child(2){
+    width: 75%;
+    padding: 0 0 0 10px;
+}
+.classflex>div:last-child{
+    padding-right: 10px;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row{
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.rownested{
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="./css/task6_style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tank">
+        <section>
+            <h1>Hotel Booking</h1>
+        </section>
+        <section>
+            <form action="" method="POST">
+                <div class="container">
+
+                    <div class="metacontainer">
+                        <p>Ваше имя: <span>*</span></p>
+                    </div>
+
+                    <div class="fieldcontainer">
+                        <div>
+                            <input type="text" required>
+                            <div class="podpis">First name</div>
+                        </div>
+                        <div>
+                            <input type="text" required>
+                            <div class="podpis">Last name</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+
+                    <div>
+                        <p>E-mail: <span>*</span></p>
+                    </div>
+
+                    <div class="subcontainer">
+                        <input type="email" placeholder="ex: example@example.com" required>
+                        <div class="podpis">Email</div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div>
+                        <p>Room type:</p>
+                    </div>
+                    <div>
+                        <select name="roomType" size="1">
+                            <option value="s1" selected>с видом на море</option>
+                            <option value="s2">др.</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div>
+                        <p>Free Pickup <span>*</span></p>
+                    </div>
+                    <div>
+                        <input type="radio" value="Yes" id="freePickupYes" name="radioFreePickup"><label for="freePickupYes"> Yes! Please! - Pick me up on arrival! </label><br>
+                        <input type="radio" value="No" id="freePickupNo" name="radioFreePickup"><label for="freePickupNo"> No thanks! - I'll make my own way there </label>
+                    </div>
+                </div>
+                <div class="buttonclass">
+                    <a href="#" class="submit">Submit</a>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
