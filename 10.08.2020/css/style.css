@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* musthave */
+*{
+    box-sizing: border-box; 
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Open sans', serif;
+    font-size: 1.4rem;
+    color: #6b6b6b;
+    background-color: #f2f2f2;
+    /* background: ; можно указать картинку */
+    /* musthave */
+    /* margin: 0; */
+}
+h1{
+    font-family: 'Roboto slab';
+}
+img{
+    vertical-align: middle;
+}
+
+header{
+    background: #363636;
+    color: #fff;
+}
+
+.slider{
+    width: 1170px;
+    vertical-align: middle;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider img{
+    width: 100%;
+}
+
+.slider .block-headlines .headbody{
+    background-color: rgba(218, 68, 83, 0.7);    
+    display: inline-block;
+}
+
+.headbody h1{
+    padding: 12px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.slider .block-headlines .subheadbody{
+    background-color: rgba(59, 59, 59, 0.8);
+    color: #dddddd;
+    padding: 12px 20px;
+    max-width: 600px;
+}
+
+.block-headlines{
+    margin-bottom: 50px;
+    position: absolute;
+    bottom: 270px;
+    left: 150px;
+    max-width: 1170px;
+}
+
+.contentheader{
+    /* 1-ый вариант */
+    /* max-width: 1170px;
+    /* 2-ой вариант */
+    width: 1170px;
+    height: 75px;
+    vertical-align: middle;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.content{
+    /* 1-ый вариант */
+    /* max-width: 1170px;
+    /* 2-ой вариант */
+    width: 1170px;
+    vertical-align: middle;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* или просто */
+    /* margin: 0 auto; */
+}
+
+.headerflex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerflex .ssilka{
+    width: 50%;
+}
+
+.headerflex .ssilka > a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    color: #dadada;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.headerflex .menuheader{
+    width: 50%;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/* -----Меню  в шапке----- */
+.menuheader>ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+.menuheader ul li{
+    float: left;
+    padding: 10px 15px;
+}
+.menuheader ul li a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s linear;
+}
+.menuheader ul li a:hover {
+    color: #DA4453 ;
+}
+/* -----Меню в шапке----- */
+
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.columnleft{
+    width: 750px;
+    flex-shrink: 0;
+    max-width: 70%;
+    margin-right: 15px;
+}
+
+.article{
+    color: #6b6b6b;
+    font-size: 1.4rem;
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+
+.article .article-image img{
+    max-width: 100%;
+    transition: opacity 0.5s linear;
+}
+
+.article .article-image img:hover{
+    opacity: 0.5;
+}
+
+.article .article-content{
+    padding: 45px 50px;
+    border: 1px solid #dadada;
+}
+
+.article .content-heading h1{
+    margin: 0 0 30px 0;
+}
+
+.article .content-heading h1 a{
+    color: #444;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.8rem;
+    transition: color 0.5s linear;
+}
+
+.article .content-heading h1 a:hover{
+    color: #da4453;
+}
+
+.article .content-meta{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.article .content-meta > div{
+    margin-right: 15px;
+}
+
+.article .content-meta > div:last-child{
+    margin-right: 0;
+}
+
+.article .content-meta a{
+    font-size: 13px;
+    color: #6b6b6b;
+    text-decoration: none;
+}
+
+.article .content-action{
+    text-align: right;
+    margin-top: 10px;
+}
+
+.article .content-action .readmore{
+    background-color: #da4453;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 11px 13px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #da4453;
+    transition: background 0.5s linear;
+}
+
+.article .content-action .readmore:hover{
+    background: #000000;
+    border-color: black;
+}
+
+.classfooter{
+    width: 1170px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0;
+    background-color: #1F1F1F;
+    font-size: 12px;
+}
+
+.footerflex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerflex .menufooter{
+    width: 50%;
+    text-transform: uppercase;
+}
+
+.footerflex .copyrights{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.footerflex .copyrights div:nth-child(2n+1){
+    color: #DADADA ;
+}
+.footerflex .copyrights div:nth-child(2n){
+    color: #999 ;
+}
+
+/* -----Меню  в футере----- */
+.menufooter>ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+.menufooter ul li{
+    float: left;
+    padding: 10px 15px;
+}
+.menufooter ul li a{
+    text-decoration: none;
+    color: #DADADA;
+}
+.menufooter ul li a:hover {
+    color: white;
+}
+/* -----Меню в футере----- */
+
+.columnright{
+    width: 390px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-color: #dadada;
+    flex-shrink: 0;
+    max-width: 30%;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 4px;
+}
+
+.columnright article{
+    margin-bottom: 50px;
+}
+
+.columnright .headline h1{
+    font-size: 14px;
+    font-weight: bold;
+    color: #636467;
+    padding-bottom: 25px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.columnright .headline .icon{
+    display: flex;
+    font-size: 18px;
+}
+
+.icon > div{
+    height: 40px;
+    width: 40px;
+    background-color: #c1c0c0;
+    margin: 0 5px 5px 0;
+    border-radius: 3px;
+    transition: background-color 0.5s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon .fa{
+    color: white;
+    vertical-align: middle;
+}
+
+.icon > div:nth-child(1):hover{
+    background-color: #55ACEE;
+}
+.icon > div:nth-child(2):hover{
+    background-color: #4265b9;
+}
+.icon > div:nth-child(3):hover{
+    background-color: #df3333;
+}
+.icon > div:nth-child(4):hover{
+    background-color: #d62408;
+}
+.icon > div:nth-child(5):hover{
+    background-color: #5b8bb4;
+}
+/* 1-ый вариант (.columnright .headline .tags > div раскоментировать width/height) */
+/* .columnright .headline .tags{
+    display: flex;
+    align-content: space-between;
+    justify-items: flex-start;
+    flex-wrap: wrap;
+} */
+
+.columnright .headline .tags > div{
+    /* 2-ой вариант */
+    display: inline-block;
+    /* width: auto;
+    height: auto; */
+    background-color: #dadada;
+    margin-bottom: 4px;
+    margin-right: 10px;
+    padding: 6px 7px;
+    border-radius: 3px;
+    transition: background-color 0.8s linear;
+}
+
+.columnright .headline .tags > div:hover{
+    background-color: #DA4453;
+}
+
+.tags a{
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.comments .content-comments > div{
+    display: block;
+    border-bottom: 1px solid #F2F2F2;
+    color: #C1C0C0;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.comments .content-comments > div a{
+    text-decoration: none;
+    color: #C1C0C0;
+    font-size: 14px
+}
