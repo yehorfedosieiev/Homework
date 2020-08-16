@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3</title>
+</head>
+<body>
+    <ul>
+        <li><a href="./index.html">Задание 1</a></li>
+        <br>
+        <li><a href="./task2.html">Задание 2</a></li>
+        <br>
+        <li><a>Задание 3</a></li>
+        <br>
+        <li><a href="./task4.html">Задание 4</a></li>
+    </ul>
+    <main>
+        <article>
+            <h1>Пример семантики</h1>
+            <details open="open">
+                <summary>плохая семантика:</summary>
+                        <p>
+                            <a href="https://130.com.ua/uk/vybor-videoregistratorov/">130.com.ua</a>
+                            <ul>
+                                <li>
+                                    script должен быть вынесен в отдельный файл
+                                </li>
+                                <li>
+                                    "Роздільна здатність відео" как мне кажется должно быть заголовком h2, но это всего-лишь параграф
+                                </li>
+                                <li>
+                                    "Навіщо потрібен дисплей відеореєстратора?" - заголовок h3 (причем заголовка h2 так и не нашел), хотя по логике это должно быть summary в блоке details
+                                    вообщем нет последовательности.
+                                </li>
+                            </ul>
+                        </p>
+                        <p>
+                            <a href="https://www.ukrposhta.ua/ua">Укрпошта</a>
+                            <ul>
+                                <li>
+                                    script должен быть вынесен в отдельный файл
+                                </li>
+                                <li>
+                                    меню реализовано через тег a, но нет тегов ul и li
+                                </li>
+                                <li>
+                                    слайдер реализован через ul и li (может так и надо?)
+                                </li>
+                            </ul>
+                        </p>
+            </details>
+            <details open="open">
+                <summary>хорошая семантика:</summary>
+                <p>
+                    <a href="https://www.apple.com/">apple.com</a>
+                </p>
+                <p>
+                    все разбито согласно логики, проработана логика разметки
+                </p>
+            </details>
+        </article>
+    </main>
+    <footer>
+        <address>Могу конечно ошибаться :)</address>
+    </footer>    
+</body>
+</html>
