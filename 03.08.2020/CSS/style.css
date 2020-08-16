@@ -1,0 +1,126 @@
+h1{
+    color: cornflowerblue;
+}
+p.classP{
+    border: 1px solid cyan;
+    padding: 10px;
+}
+
+/* the menu creation */
+#menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    margin-left: auto;
+    margin-right: auto;
+}
+#menu>li{
+    display: inline;
+    margin-right: 5px;
+}
+#menu a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px 10px 20px;
+}
+#menu>li>a:hover{
+    color: #ffffff;
+}
+#menu>li:not(:last-child)::after{
+    content: "|";
+}
+#menu ul{
+    display: none;
+}
+
+/* Task 2 */
+.classUl{
+    margin: 0;
+    padding: 0;
+}
+.classUl li:first-child{
+    font-weight: bold;
+    font-size: 30px;
+}
+.classUl li:first-child:after{
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: black;
+}
+.classUl li:last-child{
+    border-bottom: 1px solid #000;
+}
+.classUl li a{
+    display: block;
+    text-decoration: none;
+    color: #444;
+}
+.classUl li a:hover{
+    border-bottom: 1px solid;
+    color: #999;
+}
+
+/* Task 3 */
+.picture{
+    text-align: center;
+    width: fit-content;
+    border: 1px solid #999;
+    margin: 0 10px 5px 0;
+}
+p.classptask3{
+    border: dashed 1px #634F36;
+    background: #fffff5;
+    font-family: "Courier New", Courier, monospace; 
+    padding: 7px;
+    font-size: 80%;
+    margin: 0 0 1em;
+}
+.divInvisible{
+    display: none;
+}
+#switch1:checked ~ div.divVisible1{
+    display: block;
+}
+#switch2:checked ~ div.divVisible2{
+    display: block;
+}
+#switch3:checked ~ div.divVisible3{
+    display: block;
+}
+
+/* Task 4 */
+h2.classH2{
+    text-align: center;
+}
+.left-picture{
+    float: left;
+    text-align: center;
+    border: 1px solid #999;
+    margin: 0 10px 5px 0;
+}
+
+/* Task 5 */
+table, tr, td{
+    width: auto;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 5px;
+}
+table>thead{
+    background-color: khaki;
+    text-align: center;
+}
+table tbody td:nth-child(3), table tbody td:nth-child(4){
+    text-align: center;
+}
+table tbody td:last-child{
+    text-align: right;
+}
+table tbody tr:nth-child(2n){
+    background-color: #999;
+}
+table tbody tr:nth-child(2n+1){
+    background-color: #ffffff;
+}
