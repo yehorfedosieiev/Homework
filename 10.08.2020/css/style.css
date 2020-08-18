@@ -37,6 +37,7 @@ header{
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
 .slider img{
@@ -66,8 +67,8 @@ header{
 .block-headlines{
     margin-bottom: 50px;
     position: absolute;
-    bottom: 270px;
-    left: 150px;
+    bottom: 0px;
+    left: 50px;
     max-width: 1170px;
 }
 
