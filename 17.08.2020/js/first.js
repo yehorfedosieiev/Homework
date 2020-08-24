@@ -113,6 +113,5 @@ alert("Самая большая колонка = " + Math.max(firstColumn, seco
 // Получите второе число из окна prompt. Сравните и отобразите в модальном окне: первое число
 // меньше второго или нет, а также оба значения. Расчеты сделайте в одном выражении! (То есть в скобках метода alert.)
 alert("Задача 11");
-let xx = Math.round(Math.random()*100),
-yy = +prompt("Веедите число", "");
-alert("x < y = " + Boolean(xx<yy) + ", x=" + xx + ", y=" + yy);
+let xx, yy;
+alert("x > y = " +  ((xx = Math.round(Math.random()*100)) > (yy = prompt("Веедите число y", ""))) + " x = " + xx + " y = " + yy);
