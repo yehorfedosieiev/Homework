@@ -8,31 +8,28 @@ let result = "";
 
 if (lang === "ru" || lang === "eng") day = +prompt("Выберите число от 0 до 6", "");
 
-switch (lang){
-    case "ru":
-        switch (day){
-            case 0: result = "Воскресенье"; break;
-            case 1: result = "Понедельник"; break;
-            case 2: result = "Вторник"; break;
-            case 3: result = "Среда"; break;
-            case 4: result = "Четверг"; break;
-            case 5: result = "Пятница"; break;
-            case 6: result = "Суббота"; break;
-        }
-        break;
-    case "eng":
-        switch (day){
-            case 0: result = "Sunday"; break;
-            case 1: result = "Monday"; break;
-            case 2: result = "Tuesday"; break;
-            case 3: result = "Wednesday"; break;
-            case 4: result = "Thursday"; break;
-            case 5: result = "Friday"; break;
-            case 6: result = "Saturday"; break;
-        }
-        break;
-    default:
-        alert ("Неправильный язык!");
+if (lang === "ru"){
+    switch (day){
+        case 0: result = "Воскресенье"; break;
+        case 1: result = "Понедельник"; break;
+        case 2: result = "Вторник"; break;
+        case 3: result = "Среда"; break;
+        case 4: result = "Четверг"; break;
+        case 5: result = "Пятница"; break;
+        case 6: result = "Суббота"; break;
+    }
+} else if (lang === "eng"){
+    switch (day){
+        case 0: result = "Sunday"; break;
+        case 1: result = "Monday"; break;
+        case 2: result = "Tuesday"; break;
+        case 3: result = "Wednesday"; break;
+        case 4: result = "Thursday"; break;
+        case 5: result = "Friday"; break;
+        case 6: result = "Saturday"; break;
+    }
+} else {
+    alert ("Неправильный язык!");
 }
 
 if (result) alert("Вы выбрали: " + result);
