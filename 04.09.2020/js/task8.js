@@ -46,7 +46,7 @@ let myArray = [
     },
     {
         name: "\"0\"",
-        value: false
+        value: true
     },
     {
         name: "null",
@@ -72,30 +72,32 @@ let myArray = [
 
 let tableElement = document.createElement("table");
 document.querySelector(".divtable").appendChild(tableElement);
-tableElement.style.borderSpacing = "0px";
-tableElement.style.margin = "auto";
 
-let trElement = document.createElement("tr");
-tableElement.appendChild(trElement);
-for(let j = 0; j < myArray.length; j++){
-    let tdElement = document.createElement("td");
-    trElement.appendChild(tdElement);
-    tdElement.innerText = myArray[j].name;
-    tdElement.style.border = "1px solid #000";
-    tdElement.style.width = "20px";
-    tdElement.style.height = "60px";
-    tdElement.style.background = "gray";
-}
-
-trElement = document.createElement("tr");
-tableElement.appendChild(trElement);
-for(let j = 0; j < myArray.length; j++){
-    let tdElement = document.createElement("td");
-    trElement.appendChild(tdElement);
-    tdElement.innerText = myArray[j].value;
-    tdElement.style.border = "1px solid #000";
-    tdElement.style.width = "20px";
-    tdElement.style.height = "20px";
-    if (myArray[j].value === true) tdElement.style.background = "green";
-    else tdElement.style.background = "red";   
+for(let i = 0; i < 2; i++){
+    let trElement = document.createElement("tr");
+    tableElement.appendChild(trElement);
+    if (i===0) {
+        let tdElement = document.createElement("td");
+        trElement.appendChild(tdElement);
+    }
+    else{
+        let tdElement = document.createElement("td");
+        trElement.appendChild(tdElement);
+        tdElement.innerText = "if (value)";
+    }
+    for(let j = 0; j < myArray.length; j++){
+        let tdElement = document.createElement("td");
+        trElement.appendChild(tdElement);
+        let spanElement = document.createElement("span");
+        tdElement.appendChild(spanElement);
+        if (i===0) {
+            spanElement.innerText = myArray[j].name;
+            if (myArray[j].name.length > 3) spanElement.style.transform = "rotate(-90deg)";
+        }
+        else{
+            tdElement.innerText = myArray[j].value;
+            if (myArray[j].value === true) tdElement.style.background = "green";
+            else tdElement.style.background = "red";
+        }
+    }
 }

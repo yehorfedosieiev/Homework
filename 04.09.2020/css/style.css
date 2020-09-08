@@ -36,14 +36,26 @@ ul.css-menu li a:active {
 }
 
 .divtable table{
+  border-spacing: "0px";
+  margin-left: "auto";
+  margin-right: "auto";
   text-align: center;
 }
 
-.divtable table tr:nth-child(2)::before{
-  content: "if (value)";
-  display: block;
-  width: 60px;
-  height: 20px;
-  border: 1px solid #000;
+.divtable table tr:first-child td:first-child ~ td{
   background: gray;
+  border: 1px solid #000;
+  width: 70px;
+  height: 70px;
+}
+
+.divtable table tr:nth-child(2) td:first-child{
+  background: gray;
+  border: 1px solid #000;
+  width: 70px;
+  height: 70px;
+}
+
+span{
+  display: block;
 }
