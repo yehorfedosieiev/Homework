@@ -2,7 +2,7 @@
 
 alert("5.	Изучите перебирающие методы массивов: forEach, filter, map. Создайте массив объектов users (~10 объектов), каждый объект имеет поля firstname, lastname, age с разными значениями, у некоторых есть поле middlename. Используя встроенные функции массивов:\na.	Отфильтруйте пользователей младше 18 лет\nb.	Добавьте каждому объекту поле fullName, которое является конкатенацией firstname, middlename и lastname, если есть все три, и только firstname и lastname, если middlename нет\nc.	Сформируйте новый массив, который содержит только полное имя пользователей");
 
-let users = [
+let data = [
     {
         firstname: "qwerty",
         lastname: "asdfgh",
@@ -59,28 +59,23 @@ let users = [
     }
 ]
 
-alert("Смотри консоль");
+function handleIteration(item) {
+    console.log(item);
+    item.fullname = 'middlename' in item 
+        ? item.firstname + ' ' + item.middlename + ' ' + item.lastname
+        : item.firstname + ' ' + item.lastname;
+}
 
-console.log("Начальный массив объектов:");
-console.log(users);
+data.forEach(handleIteration);
 
-let cloneLessEighteen;
-cloneLessEighteen = users.filter(function(index){
-    return index.age > 18;
-})
-console.log("Отсутствуют те, которым меньше 18:");
-console.log(cloneLessEighteen);
+console.log(data);
 
-let fullNameArr = users.slice();
-fullNameArr.forEach(function(index){
-    if ("middlename" in index) index.fullName = index.firstname + " " + index.middlename + " " + index.lastname;
-    else index.fullName = index.firstname + " " + index.lastname;
+let newData = data.map(function(item) {
+   return item.middlename ? item.fullname : null;
 });
-console.log("Конкатенация полей");
-console.log(fullNameArr);
 
-let onlyFullname = fullNameArr.map(function(index){
-    return index.fullName;
-});
-console.log("Только полное имя");
-console.log(onlyFullname);
+console.log(newData);
+
+let filterData = newData.filter(item => item);
+
+console.log(filterData);
